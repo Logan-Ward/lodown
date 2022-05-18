@@ -60,7 +60,7 @@ module.exports.first = first;
  * last: A function that returns the last amount of a given number of items in an array
  * @param { array } array: Function accepts an array.
  * @param { number } num: Function accepts a number.
- * @return { array }: Function returns an array of the given length from the original array.
+ * @return { array }: Function returns an array of the given amount of the last items from the original array.
  */
  function last(array, num){
     let newArray = [];
@@ -347,8 +347,8 @@ module.exports.some = some;
  * call using the seed value. Returns the final function call's result.
  * @param { array } array: Function accepts an array. 
  * @param { function } func: Function accepts a function.
- * @param { number } seed: Function accepts a number.
- * @return { number }: Function returns the result of the consecutive function calls.
+ * @param { any value } seed: Function accepts a value.
+ * @return { any value }: Function returns the result of the consecutive function calls.
  */
  function reduce(array, func, seed){
     let previous;
